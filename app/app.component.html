@@ -1,0 +1,12 @@
+<h1>{{name}}</h1>
+<h4>Search for something and see how people on Twitter feel about it.</h4>
+<p>For example: Search for 'dogs' and see how people feel about it on Twitter.</p>
+
+<input #searchItem type = "text" placeholder="Search for something..." (keyup.enter)="searchInput(searchItem.value); searchItem.value = ''">
+
+<button (click)="searchInput(searchItem.value)">Search</button>
+
+<p>Searching Twitter for #{{item}}...</p>
+
+<h2>Sentiment Analysis of {{item}}</h2>
+
